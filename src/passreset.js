@@ -10,18 +10,18 @@ export default class PassReset extends React.Component {
             password: '',
             cnfpassword: '',
         }
-        // this.showHide = this.showHide.bind(this);
+        this.showHide = this.showHide.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handlePassword = this.handlePassword.bind(this);
         this.handleCnfpassword = this.handleCnfpassword.bind(this);
     }
-    // showHide(e){
-    //     e.preventDefault();
-    //     e.stopPropagation();
-    //     this.setState({
-    //         type: this.state.type === 'input' ? 'password' : 'input'
-    //     })
-    // }
+    showHide(e){
+        e.preventDefault();
+        e.stopPropagation();
+        this.setState({
+            type: this.state.type === 'input' ? 'password' : 'input'
+        })
+    }
 
     handleSubmit = (event) =>{
         event.preventDefault();
