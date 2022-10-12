@@ -22,6 +22,7 @@ class App extends Component {
         <Jsx0 />,
         <Jsx1 />,
         <Jsx2 />,
+        <Jsx3 name="Shivang Sarat" />,
       </div>
     );
   }
